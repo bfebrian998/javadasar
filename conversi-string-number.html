@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+    <script>
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+
+        document.writeln(`<p>${sum}<p>`);
+        document.write(`<p>${parseInt("1.9")}`);
+        document.writeln(`<p>${parseFloat("1.6")}`);
+        document.writeln(`<p>${Number("1.1")}`);        //bisa menggunakan int atau float
+        
+            const a =1;
+            const b=2;
+            const total = a.toString() + b.toString(); //merubah number ke string
+            document.writeln(`<p>${total}<p>`);
+
+        document.writeln(`<p>${parseInt("1.9sdasd")}`);
+        document.writeln(`<p>${parseFloat("dsdsd1.6")}`);
+
+            document.write(`<p>${Number("1.9sfs")}`);
+        document.writeln(`<p>${Number("sdfs1.6")}`);//tidak boleh salah saama sekali maka nan
+
+            const first = Number("apaja"); //nan
+            const totalnumber = first + 10 ;
+            document.writeln(`<p>${totalnumber}`);
+            document.writeln(`<p>${isNaN(first)}`);
+                document.writeln(`<p>${isNaN(100)}`);        
+
+
+    </script>
+</body>
+</html>

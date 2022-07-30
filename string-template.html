@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</ti
+        tle>
+</head>
+<body>
+    <script>
+        const name = "bambang febrianto";
+        const umur = "24 tahun";
+        const pekerjaan = "fullstack web";
+        const template = `name : ${name} <br> ${umur} <br> ${pekerjaan}`;
+        document.writeln("<p>" +template+"<p>" )
+        console.log(template);
+
+        const nilai = 90;
+        const template2 = `name : ${name} ,  lulus : ${nilai > 75}`;
+        console.log(template2);
+
+        const multiline = `bambang febrianto
+saya saat ini bekerja sebagai 
+seorang fullstack developer
+        `
+        document.writeln("<pre>");
+        document.writeln(multiline)
+        document.writeln("</pre>");    
+
+
+    </script>
+
+</body>
+</html>

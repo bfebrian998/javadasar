@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+        let arraykosong = [];
+        let arrayisi = ["bams","keren","banget"];
+
+        const names = [];
+        names.push("bambang");
+        names.push("febrianto","keren");
+        names.push("banget","sumpah","apa");
+
+
+        console.table(names);
+
+        console.info(names[0]);
+        console.info(names[1]);
+
+        names[0] = "bamskeren";
+        names[1] = "fullstack";
+
+        console.table(names);
+
+        delete names[3];
+        console.table(names);
+        
+        names.push("nambah lagi");
+
+        console.table(names);
+        
+        names[3] = "tambah lagi";
+        names.push(1,2,3);
+        names.push(["bams","keren sumpah"]);
+        names.push(["bams","keren sumpah"]);
+        console.table(names);
+
+
+
+
+        
+    </script>
+
+</body>
+</html>
