@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator IN</title>
+</head>
+<body>
+    <script>
+        // in operator mengecek apakah sebuah property / index ada di dalam object/arrat atau tidak
+        // jika ada maka hasilnya true 
+        // jika tidak ada false
+        // walaupun hasil object/index hasilnya null/undefined maka tetap true
+        const person = {
+            // nama : "bambang", //hasilnya true
+                namaDepan : "bambang",//hasil nya false karena tidak ada property pada nama
+            namaTerakhir : "febrianto" 
+        };
+        if ("nama" in person){
+            alert (`hello ${person.nama}`);
+        } else {
+            alert("tidak ada property")
+        }
+    
+        const karyawan = {
+            nama : undefined, //tetep true karena ada nilai undifined
+            jabatan : "backend developer"
+        };
+        if ("nama" in karyawan) {
+            alert(`hello ${karyawan.nama}`);
+            
+        } else {
+            alert("tidak ada data");
+        }
+
+        const names =[null,"bams",null];
+        const result = 0 in names;
+        document.writeln(`<p> hello ${result}</p>`)
+
+
+    </script>
+
+</body>
+</html>

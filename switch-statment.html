@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statment</title>
+</head>
+<body>
+    <script>
+        // switch adalah statment percabangan sama dengan if tapi lebih sederhana
+        // kondisi di switch hanya menggunakan statment perbandingan ==
+        // switch hanya true dan false / bollean
+        let nilai=prompt("masukan nilai");
+       switch (nilai) {
+        case "A":
+            document.writeln("<p> anda lulus good macho</p>");
+            break;
+        case "B":
+        case "C":
+            document.writeln("<p> anda lulus<p> ");    
+            break;
+        case "D":
+            document.writeln("anda tidak lulus");
+            break   
+        default:
+            document.writeln("anda nyari sekoalahan lain nya");
+            break;
+       }
+       
+    //    if (nilai == "A") {
+    //     document.writeln("<p>anda lulus good macho</p>");
+    //    } else if ( nilai == "B" || nilai == "C")
+    //    {
+    //     document.writeln("<p> anda lulus </p>");
+    //    } else if (nilai == "D") {
+    //     document.writeln("<p>anda tidak lulus</p>");
+        
+    //    } else{
+    //     document.writeln("nyari sekoilah lain gan");
+    //    }
+    </script>
+
+</body>
+</html>
