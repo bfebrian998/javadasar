@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator di Non Boolean</title>
+</head>
+<body>
+    <script>
+        // operator OR(||) di non boolean membaca dari kiri ke kanan
+        // operator ini akan mengambil nilai pertama yan truthy 
+        console.log("hello" || '');//hello
+        console.log("" || []);//[]
+        console.log("0" || "NOL");//0
+        console.log(null ||"null");//null
+        console.log(undefined || "undefined");//undefined
+        console.log(undefined || null); //null
+        //operator && di non boolean membaca dari kiri kekanan
+        // operator ini akan mengambil nilai pertama yang falsy
+        console.log("hello"&& "" );//""
+        console.log("" && []);//""
+        console.log(null && "nu;;");//null
+
+    </script>
+
+</body>
+</html>
